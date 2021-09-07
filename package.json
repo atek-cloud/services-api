@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atek-cloud/adb-api.git"
+    "url": "git+https://github.com/atek-cloud/services-api.git"
   },
   "author": "Paul Frazee <pfrazee@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atek-cloud/adb-api/issues"
+    "url": "https://github.com/atek-cloud/services-api/issues"
   },
-  "homepage": "https://github.com/atek-cloud/adb-api#readme",
+  "homepage": "https://github.com/atek-cloud/services-api#readme",
   "devDependencies": {
     "@types/node": "^16.7.13",
     "typescript": "^4.4.2"
