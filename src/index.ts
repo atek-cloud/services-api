@@ -36,7 +36,7 @@ export interface ServicesApi {
 
 export class ServiceRecord {
   id: string = ''
-  port: number = 0
+  owningUserKey: string = ''
   sourceUrl: string = ''
   desiredVersion?: string
   package: {
@@ -50,12 +50,11 @@ export class ServiceRecord {
     author?: string
     license?: string
   }
-  installedBy: string = ''
   static schema = {
     "type": "object",
     "properties": {
       "id": {"type": "string"},
-      "port": {"type": "number"},
+      "owningUserKey": {"type": "string"},
       "sourceUrl": {"type": "string", "format": "uri"},
       "desiredVersion": {"type": "string"},
       "package": {
@@ -75,15 +74,13 @@ export class ServiceRecord {
           "author": {"type": "string"},
           "license": {"type": "string"}
         }
-      },
-      "installedBy": {"type": "string"}
+      }
     },
     "required": [
       "id",
-      "port",
+      "owningUserKey",
       "sourceUrl",
-      "package",
-      "installedBy"
+      "package"
     ]
   }
 }
