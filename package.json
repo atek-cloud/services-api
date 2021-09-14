@@ -1,6 +1,6 @@
 {
   "name": "@atek-cloud/services-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Atek Services API",
   "main": "dist/index.js",
   "type": "module",
