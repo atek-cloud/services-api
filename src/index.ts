@@ -87,15 +87,17 @@ export class ServiceRecord {
 
 export class ServiceInfo {
   status: StatusEnum = StatusEnum.inactive
+  key: string = ''
   settings: ServiceRecord = new ServiceRecord()
   static schema = {
     "type": "object",
     "properties": {
       "status": {"type": "string"},
+      "key": {"type": "string"},
       "settings": ServiceRecord.schema
     },
     "required": [
-      "status",
+      "key",
       "settings"
     ]
   }
