@@ -113,6 +113,7 @@ export class InstallOpts {
   id?: string
   desiredVersion?: string
   port?: number
+  user?: string
   static schema = {
     "type": "object",
     "properties": {
@@ -122,7 +123,8 @@ export class InstallOpts {
       },
       "id": {"type": "string"},
       "desiredVersion": {"type": "string"},
-      "port": {"type": "number"}
+      "port": {"type": "number"},
+      "user": {"type": "string"}
     },
     "required": ["sourceUrl"]
   }
